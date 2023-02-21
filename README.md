@@ -19,5 +19,4 @@ all'utente l'età (variabile const)
 Sulla base delle precedenti informazioni fornite dall'utente:
 - calcolare il prezzo totale da pagare, rispettando le condizioni sopra descritte.
 
-- mostrare in console.log da inspector il prezzo finale con massimo
-due decimali.
+- mostrare in console.log da inspector il prezzo finale con massimo due decimali.

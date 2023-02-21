@@ -14,25 +14,24 @@ let basePrice = parseFloat (0.21);
 
 /*- impostare una variabile prezzo minorenni che parta dal prezzo 
 base e lo sconti del 20% (variabile let)*/
-let underPrice = parseFloat (basePrice /100 *80);
+let under18Price = parseFloat (basePrice /100 *80);
 
 /*- impostare una variabile prezzo over65 che parta dal prezzo 
 base e lo sconti del 40% (variabile let)*/
-let overPrice = parseFloat (basePrice /100 *60);
+let over65Price = parseFloat (basePrice /100 *60);
 
 
-
+/*-Sulla base delle precedenti informazioni fornite dall'utente:
+- calcolare il prezzo totale da pagare, rispettando le condizioni sopra descritte.*/
 if (etaUser < 18){
-    console.log("Prezzo totale da pagare:", kmTravel * underPrice, "€");
+    console.log("Prezzo totale da pagare:", (kmTravel * under18Price).toFixed(2), "€");
     
 } else if (etaUser > 65){
-    console.log("Prezzo totale da pagare:", kmTravel * overPrice, "€");
+    console.log("Prezzo totale da pagare:", (kmTravel * over65Price).toFixed(2), "€");
 
 } else {
-    console.log("Prezzo totale da pagare:", kmTravel * basePrice, "€");
+    console.log("Prezzo totale da pagare:", (kmTravel * basePrice).toFixed(2), "€");
 
 }
 
 
-
-// console.log("prezzo totale da pagare:", finalPrice);
