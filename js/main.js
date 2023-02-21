@@ -2,11 +2,11 @@
 
 /*- impostare variabile con valore prompt con la quale chiedere
 all'utente il numero di km che deve percorrere (variabile const)*/
-const kmTravel = parseInt (prompt ('PREGO INSERIRE IL NUMERO DI KM DA PERCORRERE'));
+const kmTravel = parseInt (promp ('PREGO INSERIRE IL NUMERO DI KM DA PERCORRERE'));
 
 /*- impostare variabile con valore prompt con la quale chiedere
 all'utente l'età (variabile const)*/
-const etaUser = parseInt (prompt('PREGO INSERIRE IL NUMERO DI ANNI'));
+const etaUser = parseInt (promp('PREGO INSERIRE IL NUMERO DI ANNI'));
 
 /*- impostare una variabile prezzo base del biglietto che è di 
 0,21 € per km (variabile let)*/
@@ -34,4 +34,5 @@ if (etaUser < 18){
 
 }
 
-
+// provare con funzione switch se ha senso usarla, e provare
+// ad inserire alcuni dati html e css-

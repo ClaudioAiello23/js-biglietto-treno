@@ -1,0 +1,48 @@
+/* 
+************************
+COMMON
+************************ 
+*/
+body{
+    background-color: lightblue;
+
+}
+
+/* 
+************************
+HEADER
+************************ 
+*/
+
+header{
+    border-bottom: 2px solid black;
+}
+
+header .train_icon{
+    width: 200px;
+    height: auto;
+}
+
+header .station_icon{
+    width: 100px;
+    height: auto;
+}
+
+
+/* 
+************************
+MAIN
+************************ 
+*/
+
+
+.train_info{
+    height: 500px;
+    background-image: url(../img/pendolari.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid black;
+    border-radius: 20px;
+    color: white;
+}
+
