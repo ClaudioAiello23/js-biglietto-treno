@@ -2,29 +2,37 @@
 
 /*- impostare variabile con valore prompt con la quale chiedere
 all'utente il numero di km che deve percorrere (variabile const)*/
-const kmTravel = prompt ('PREGO INSERIRE IL NUMERO DI KM DA PERCORRERE');
+const kmTravel = parseInt (prompt ('PREGO INSERIRE IL NUMERO DI KM DA PERCORRERE'));
 
 /*- impostare variabile con valore prompt con la quale chiedere
 all'utente l'età (variabile const)*/
-const etaUser = prompt('PREGO INSERIRE IL NUMERO DI ANNI');
+const etaUser = parseInt (prompt('PREGO INSERIRE IL NUMERO DI ANNI'));
 
 /*- impostare una variabile prezzo base del biglietto che è di 
 0,21 € per km (variabile let)*/
-let basePrice = 0.21;
+let basePrice = parseFloat (0.21);
 
 /*- impostare una variabile prezzo minorenni che parta dal prezzo 
 base e lo sconti del 20% (variabile let)*/
-let underPrice = (0.21 * 80 / 100);
+let underPrice = parseFloat (basePrice /100 *80);
 
 /*- impostare una variabile prezzo over65 che parta dal prezzo 
 base e lo sconti del 40% (variabile let)*/
-let overPrice = (0.21 * 60 / 100);
+let overPrice = parseFloat (basePrice /100 *60);
 
 
 
+if (etaUser < 18){
+    console.log("Prezzo totale da pagare:", kmTravel * underPrice, "€");
+    
+} else if (etaUser > 65){
+    console.log("Prezzo totale da pagare:", kmTravel * overPrice, "€");
+
+} else {
+    console.log("Prezzo totale da pagare:", kmTravel * basePrice, "€");
+
+}
 
 
 
-// prova prezzo normale
-const finalPrice = kmTravel * basePrice;
-console.log("prezzo per chilometro:", overPrice);
+// console.log("prezzo totale da pagare:", finalPrice);
