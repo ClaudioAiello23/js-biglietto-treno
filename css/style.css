@@ -48,4 +48,8 @@ main{
     border-radius: 0 0 18px 18px ;
 }
 
+.nb_train_info button:hover{
+    background-color:rgb(10, 217, 10);
+}
+
 
