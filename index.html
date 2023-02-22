@@ -15,12 +15,17 @@
         <div class="container-fluid">
             <div class="row py-3">
                 <div class="col d-flex align-items-center">
-                    <div class="train_icon">
+                    <div class="nb_train_icon">
                         <img src="img/Trenitalia_logo.svg.png" alt="train_logo" class="img-fluid">
                     </div>
                 </div>
-                <div class="col-2 d-flex justify-content-end">
-                    <div class="station_icon">
+                <div class="col d-flex justify-content-center align-items-center">
+                    <div class="nb_red_train">
+                        <img src="img/redtrain.jpg" alt="red_train" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-end">
+                    <div class="nb_station_icon">
                         <img src="img/icona_stazione_fs.svg.png" alt="station_logo" class="img-fluid">
                     </div>
                 </div>
@@ -33,20 +38,21 @@
         <div class="container-fluid">
             <section id="book_train">
                 <div class="row justify-content-center">
-                    <div class="col-4">
-                        <div class="train_info my-5">
-                            <h2>ECCO LA TUA TARIFFA</h2>
-                            <ul>
-                                <li class="list-unstyled" id="nb_base_price"></li>
-                                <li class="list-unstyled" id="nb_age_user"></li>
-                                <li class="list-unstyled" id="nb_km_user"></li>
-                                <li class="list-unstyled" id="nb_final_price"></li>
-                            </ul>
+                    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center my-5">
+                        <div class="nb_train_image">
+                            <img src="img/followthetrain.png" alt="treno" class="img-fluid">
                         </div>
                     </div>
-                    <div class="col-6 d-flex justify-content-center align-items-center">
-                        <div class="train_image">
-                            <img src="img/redtrain.jpg" alt="treno" class="img-fluid">
+                    <div class="col-12 col-md-4">
+                        <div class="nb_train_info d-flex flex-column justify-content-center mt-5">
+                            <div class="h2 ps-4">LA TUA TARIFFA !!!</div>
+                            <ul>
+                                <li class="list-unstyled fw-bold pb-2" id="nb_base_price"></li>
+                                <li class="list-unstyled fw-bold pb-2" id="nb_age_user"></li>
+                                <li class="list-unstyled fw-bold pb-2" id="nb_km_user"></li>
+                                <li class="list-unstyled fw-bold pb-2" id="nb_final_price"></li>
+                            </ul>
+                            <button type="button" class="btn btn-primary btn-sm"><a href="#"></a>Clicca qui per pagare Online</button>
                         </div>
                     </div>
                 </div>

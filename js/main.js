@@ -38,14 +38,14 @@ if (etaUser < 18){
 /*Impostazione per mostrare sulla pagina web la tariffa di partenza a seconda dei 
 dati compilati dall'utente*/
 if (etaUser < 18){
-    document.getElementById('nb_age_user').innerHTML =  `La tua tariffa: ${under18Price} € - (sconto 20% minorenni)`;
+    document.getElementById('nb_age_user').innerHTML =  `La tua tariffa Minorenni: ${under18Price} €`;
     
     
 } else if (etaUser > 65){
-    document.getElementById('nb_age_user').innerHTML =  `La tua tariffa: ${over65Price} € - sconto 40% over65`;
+    document.getElementById('nb_age_user').innerHTML =  `La tua tariffa Over65: ${over65Price} €`;
 
 } else {
-    document.getElementById('nb_age_user').innerHTML =  `La tua tariffa: ${basePrice} € - tariffa base`;
+    document.getElementById('nb_age_user').innerHTML =  `La tua tariffa: ${basePrice} €`;
 
 
 }
@@ -58,13 +58,13 @@ document.getElementById('nb_km_user').innerHTML =  `Chilometri da percorrere: ${
 /*Impostazione per mostrare sulla pagina web il totale da pagare a seconda dei 
 dati compilati dall'utente*/
 if (etaUser < 18){
-    document.getElementById('nb_final_price').innerHTML ='Prezzo totale da pagare: ' + (kmTravel * under18Price).toFixed(2) + "€";
+    document.getElementById('nb_final_price').innerHTML ='TOTALE DA PAGARE: ' + (kmTravel * under18Price).toFixed(2) + "€";
     
 } else if (etaUser > 65){
-    document.getElementById('nb_final_price').innerHTML ='Prezzo totale da pagare: ' + (kmTravel * over65Price).toFixed(2) + "€";
+    document.getElementById('nb_final_price').innerHTML ='TOTALE DA PAGARE: ' + (kmTravel * over65Price).toFixed(2) + "€";
 
 } else {
-    document.getElementById('nb_final_price').innerHTML ='Prezzo totale da pagare: ' + (kmTravel * basePrice).toFixed(2) + "€";
+    document.getElementById('nb_final_price').innerHTML ='TOTALE DA PAGARE: ' + (kmTravel * basePrice).toFixed(2) + "€";
 
 }
 
